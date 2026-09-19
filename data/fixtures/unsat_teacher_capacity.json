@@ -1,0 +1,19 @@
+{
+  "days": ["Mon", "Tue", "Wed"],
+  "periods_per_day": 2,
+  "classes": ["C1", "C2", "C3"],
+  "rooms": [
+    {"id": "R-A", "kind": "general"},
+    {"id": "R-B", "kind": "general"},
+    {"id": "R-C", "kind": "general"}
+  ],
+  "teachers": [
+    {"id": "T01", "unavailable": [[0, 1], [0, 2], [1, 1], [1, 2]], "preferences": []}
+  ],
+  "lessons": [
+    {"id": "L01", "class_id": "C1", "subject": "English", "teacher_id": "T01", "is_main_subject": true},
+    {"id": "L02", "class_id": "C2", "subject": "English", "teacher_id": "T01", "is_main_subject": true},
+    {"id": "L03", "class_id": "C3", "subject": "English", "teacher_id": "T01", "is_main_subject": true}
+  ]
+}
+

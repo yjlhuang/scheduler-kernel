@@ -1,0 +1,50 @@
+{
+  "days": ["Mon", "Tue", "Wed", "Thu", "Fri"],
+  "periods_per_day": 5,
+  "classes": ["C1", "C2", "C3", "C4", "C5", "C6"],
+  "rooms": [
+    {"id": "R-A", "kind": "general"},
+    {"id": "R-B", "kind": "general"},
+    {"id": "LAB", "kind": "lab"}
+  ],
+  "teachers": [
+    {"id": "T01", "unavailable": [[0, 1]], "preferences": [{"mode": "avoid", "slots": [[2, 5]], "weight": 5, "note": "示範明示偏好"}]},
+    {"id": "T02", "unavailable": [[4, 5]], "preferences": [{"mode": "unknown", "slots": []}]},
+    {"id": "T03", "unavailable": [], "preferences": [{"mode": "indifferent", "slots": [[0, 1], [4, 5]]}]},
+    {"id": "T04", "unavailable": [[1, 3]], "preferences": []},
+    {"id": "T05", "unavailable": [], "preferences": []},
+    {"id": "T06", "unavailable": [[3, 2]], "preferences": []},
+    {"id": "T07", "unavailable": [], "preferences": []},
+    {"id": "T08", "unavailable": [[2, 4]], "preferences": []},
+    {"id": "T09", "unavailable": [], "preferences": []},
+    {"id": "T10", "unavailable": [], "preferences": []}
+  ],
+  "policy": {"max_same_subject_per_day": 1, "spread_main_subjects_weight": 3},
+  "lessons": [
+    {"id": "L01", "class_id": "C1", "subject": "Chinese", "teacher_id": "T01", "is_main_subject": true},
+    {"id": "L02", "class_id": "C1", "subject": "English", "teacher_id": "T02", "is_main_subject": true},
+    {"id": "L03", "class_id": "C1", "subject": "Math", "teacher_id": "T03", "is_main_subject": true},
+    {"id": "L04", "class_id": "C1", "subject": "Science", "teacher_id": "T09", "room_kind": "lab"},
+    {"id": "L05", "class_id": "C2", "subject": "Chinese", "teacher_id": "T01", "is_main_subject": true},
+    {"id": "L06", "class_id": "C2", "subject": "English", "teacher_id": "T04", "is_main_subject": true},
+    {"id": "L07", "class_id": "C2", "subject": "Math", "teacher_id": "T05", "is_main_subject": true},
+    {"id": "L08", "class_id": "C2", "subject": "Science", "teacher_id": "T10", "room_kind": "lab"},
+    {"id": "L09", "class_id": "C3", "subject": "Chinese", "teacher_id": "T06", "is_main_subject": true},
+    {"id": "L10", "class_id": "C3", "subject": "English", "teacher_id": "T02", "is_main_subject": true},
+    {"id": "L11", "class_id": "C3", "subject": "Math", "teacher_id": "T05", "is_main_subject": true},
+    {"id": "L12", "class_id": "C3", "subject": "Science", "teacher_id": "T09", "room_kind": "lab"},
+    {"id": "L13", "class_id": "C4", "subject": "Chinese", "teacher_id": "T06", "is_main_subject": true},
+    {"id": "L14", "class_id": "C4", "subject": "English", "teacher_id": "T04", "is_main_subject": true},
+    {"id": "L15", "class_id": "C4", "subject": "Math", "teacher_id": "T07", "is_main_subject": true},
+    {"id": "L16", "class_id": "C4", "subject": "Science", "teacher_id": "T10", "room_kind": "lab"},
+    {"id": "L17", "class_id": "C5", "subject": "Chinese", "teacher_id": "T01", "is_main_subject": true},
+    {"id": "L18", "class_id": "C5", "subject": "English", "teacher_id": "T08", "is_main_subject": true},
+    {"id": "L19", "class_id": "C5", "subject": "Math", "teacher_id": "T03", "is_main_subject": true},
+    {"id": "L20", "class_id": "C5", "subject": "Science", "teacher_id": "T09", "room_kind": "lab"},
+    {"id": "L21", "class_id": "C6", "subject": "Chinese", "teacher_id": "T06", "is_main_subject": true},
+    {"id": "L22", "class_id": "C6", "subject": "English", "teacher_id": "T08", "is_main_subject": true},
+    {"id": "L23", "class_id": "C6", "subject": "Math", "teacher_id": "T07", "is_main_subject": true},
+    {"id": "L24", "class_id": "C6", "subject": "Science", "teacher_id": "T10", "room_kind": "lab"}
+  ]
+}
+
