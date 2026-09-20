@@ -39,3 +39,10 @@ Phase 0 architecture red-team review 列出 6 個 BLOCKER（fixture 密度、res
 
 Phase 0.5 的先紅後綠紀錄、dense fixture 統計與 6/12/24 scaling 結果見
 [docs/phase05-verification.md](docs/phase05-verification.md)。Opus review 保留原文，未改寫。
+
+## 目前狀態：暫停功能擴充
+
+Build-vs-Adopt forensic audit（2026-09-21）比較本專案與兩套既有系統後，
+**暫停 Phase 1 與 domain capability 擴充**；本專案保留為 executable research prototype。
+決定與重啟條件見 [docs/decisions/build-vs-adopt-status.md](docs/decisions/build-vs-adopt-status.md)，
+完整稽核報告見 [docs/reviews/build-vs-adopt-forensic-audit.md](docs/reviews/build-vs-adopt-forensic-audit.md)。
