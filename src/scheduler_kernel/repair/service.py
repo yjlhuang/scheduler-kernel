@@ -80,6 +80,30 @@ class RepairResult:
         return 1 - (len(self.changed_lessons) / self.total_lessons)
 
 
+def _record_teacher_avoid_slot(
+    problem: SchoolProblem, teacher_id: str, avoid_slot: Slot
+) -> SchoolProblem:
+    """Persist the requested decision, keeping it idempotent.
+
+    Requesting "teacher T must not be placed at slot s" is an accepted decision in
+    its own right. Whether the *current* schedule happens to place T at s only
+    decides if anything needs moving — it must not decide whether the decision is
+    remembered, or a later Generate may put T back into a slot the user rejected.
+    """
+    already_recorded = any(
+        decision.kind == "teacher_avoid_slot"
+        and decision.entity_id == teacher_id
+        and decision.slot == avoid_slot
+        for decision in problem.decisions
+    )
+    if already_recorded:
+        return problem
+    decision = SchedulingDecision.teacher_avoid_slot(
+        teacher_id, avoid_slot, "accepted repair request"
+    )
+    return replace(problem, decisions=problem.decisions + (decision,))
+
+
 def repair_teacher_slot(
     problem: SchoolProblem,
     baseline: ScheduleState,
@@ -87,6 +111,7 @@ def repair_teacher_slot(
     avoid_slot: Slot,
 ) -> RepairResult:
     before = evaluate_quality(problem, baseline, reference=baseline)
+    updated_problem = _record_teacher_avoid_slot(problem, teacher_id, avoid_slot)
     lesson_ids = {lesson.id for lesson in problem.lessons if lesson.teacher_id == teacher_id}
     targets = {
         lesson_id
@@ -98,7 +123,7 @@ def repair_teacher_slot(
             "no_change_needed",
             "not_run",
             baseline,
-            problem,
+            updated_problem,
             (),
             len(problem.lessons),
             len(problem.lessons),
@@ -106,10 +131,6 @@ def repair_teacher_slot(
             before,
         )
 
-    decision = SchedulingDecision.teacher_avoid_slot(
-        teacher_id, avoid_slot, "accepted repair request"
-    )
-    updated_problem = replace(problem, decisions=problem.decisions + (decision,))
     fixed = {
         lesson_id: placement
         for lesson_id, placement in baseline.by_lesson.items()
