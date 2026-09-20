@@ -9,6 +9,8 @@ from ..state import ScheduleState
 def validate_schedule(problem: SchoolProblem, state: ScheduleState) -> tuple[str, ...]:
     """Validate the materialized schedule without trusting the CP-SAT model."""
     violations: list[str] = []
+    if state.problem_fingerprint != problem.content_fingerprint:
+        violations.append("schedule problem fingerprint is stale")
     lessons = {lesson.id: lesson for lesson in problem.lessons}
     rooms = {room.id: room for room in problem.rooms}
     counts = Counter(p.lesson_id for p in state.placements)
@@ -49,4 +51,3 @@ def validate_schedule(problem: SchoolProblem, state: ScheduleState) -> tuple[str
         if count > problem.policy.max_same_subject_per_day:
             violations.append(f"daily subject limit exceeded at {key}")
     return tuple(violations)
-

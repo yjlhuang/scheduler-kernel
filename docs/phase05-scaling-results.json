@@ -1,0 +1,26 @@
+[
+  {
+    "classes": 6,
+    "lessons": 210,
+    "variables": 7350,
+    "model_build_seconds": 0.100986,
+    "solver_seconds": 0.698493,
+    "status": "optimal"
+  },
+  {
+    "classes": 12,
+    "lessons": 420,
+    "variables": 16800,
+    "model_build_seconds": 0.280572,
+    "solver_seconds": 7.809039,
+    "status": "optimal"
+  },
+  {
+    "classes": 24,
+    "lessons": 840,
+    "variables": 42000,
+    "model_build_seconds": 0.909989,
+    "solver_seconds": 15.764412,
+    "status": "optimal"
+  }
+]

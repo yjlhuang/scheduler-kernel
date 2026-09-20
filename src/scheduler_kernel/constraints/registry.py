@@ -20,6 +20,7 @@ class ConstraintDefinition:
     relaxable: bool
     implemented: bool
     description: str
+    affects_feasibility: bool = True
 
 
 class ConstraintRegistry:
@@ -35,6 +36,13 @@ class ConstraintRegistry:
     def relaxable_codes(self) -> tuple[str, ...]:
         return tuple(d.code for d in self._definitions.values() if d.relaxable)
 
+    def feasibility_relaxable_codes(self) -> tuple[str, ...]:
+        return tuple(
+            d.code
+            for d in self._definitions.values()
+            if d.relaxable and d.affects_feasibility
+        )
+
 
 def default_registry() -> ConstraintRegistry:
     c = ConstraintCategory
@@ -46,8 +54,7 @@ def default_registry() -> ConstraintRegistry:
             ConstraintDefinition("H4_COMPLETE", "每堂課皆須排入", c.EXPLICIT_INSTITUTIONAL_HARD, False, True, "每個 lesson 必須恰好有一個時段與場地。"),
             ConstraintDefinition("H5_AVAIL", "教師不可排時段", c.EXPLICIT_INSTITUTIONAL_HARD, True, True, "教師明示不可授課的時段不得排課；只能經人工授權放寬。"),
             ConstraintDefinition("H6_DAILY_SUBJECT", "同科每日上限", c.TACIT_DOMAIN_HARD, True, True, "同一班同一科每日不超過設定上限。"),
-            ConstraintDefinition("P1_MAIN_SPREAD", "主科分散", c.NEGOTIABLE_POLICY, True, True, "主科盡量分散到不同日，違反時記入目標函數。"),
-            ConstraintDefinition("S1_TEACHER_SLOT", "教師時段偏好", c.SOFT_PREFERENCE, True, True, "只套用明示 prefer/avoid；unknown 與 indifferent 不產生懲罰。"),
+            ConstraintDefinition("P1_MAIN_SPREAD", "主科分散", c.NEGOTIABLE_POLICY, True, True, "主科盡量分散到不同日，違反時記入目標函數。", False),
+            ConstraintDefinition("S1_TEACHER_SLOT", "教師時段偏好", c.SOFT_PREFERENCE, True, True, "只套用明示 prefer/avoid；unknown 與 indifferent 不產生懲罰。", False),
         )
     )
-

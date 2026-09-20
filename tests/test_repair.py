@@ -8,7 +8,7 @@ from scheduler_kernel.solver.validator import validate_schedule
 FIXTURES = Path(__file__).parents[1] / "data" / "fixtures"
 
 
-def test_repair_changes_only_target_lesson_and_preserves_at_least_95_percent() -> None:
+def test_repair_changes_only_target_lesson_and_persists_accepted_decision() -> None:
     problem = load_problem(FIXTURES / "small_school.json")
     baseline = solve(problem).state
     assert baseline is not None
@@ -18,8 +18,8 @@ def test_repair_changes_only_target_lesson_and_preserves_at_least_95_percent() -
     repaired = repair_teacher_slot(problem, baseline, lesson.teacher_id, target.slot)
 
     assert repaired.state is not None
+    assert repaired.outcome == "success"
     assert repaired.changed_lessons == (target.lesson_id,)
-    assert repaired.preservation_ratio >= 0.95
+    assert repaired.preservation_ratio == 1 - (1 / len(problem.lessons))
     assert repaired.state.parent_version == baseline.version
-    assert validate_schedule(problem, repaired.state) == ()
-
+    assert validate_schedule(repaired.authoritative_problem, repaired.state) == ()

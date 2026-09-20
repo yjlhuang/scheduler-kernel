@@ -1,0 +1,2722 @@
+{
+  "days": [
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu",
+    "Fri"
+  ],
+  "periods_per_day": 7,
+  "classes": [
+    "C01",
+    "C02",
+    "C03",
+    "C04",
+    "C05",
+    "C06"
+  ],
+  "rooms": [
+    {
+      "id": "C01-HOME",
+      "kind": "general",
+      "assigned_class_id": "C01"
+    },
+    {
+      "id": "C02-HOME",
+      "kind": "general",
+      "assigned_class_id": "C02"
+    },
+    {
+      "id": "C03-HOME",
+      "kind": "general",
+      "assigned_class_id": "C03"
+    },
+    {
+      "id": "C04-HOME",
+      "kind": "general",
+      "assigned_class_id": "C04"
+    },
+    {
+      "id": "C05-HOME",
+      "kind": "general",
+      "assigned_class_id": "C05"
+    },
+    {
+      "id": "C06-HOME",
+      "kind": "general",
+      "assigned_class_id": "C06"
+    },
+    {
+      "id": "LAB-1",
+      "kind": "lab"
+    }
+  ],
+  "teachers": [
+    {
+      "id": "T01",
+      "unavailable": [
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          5
+        ]
+      ],
+      "preferences": []
+    },
+    {
+      "id": "T02",
+      "unavailable": [
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          5
+        ]
+      ],
+      "preferences": []
+    },
+    {
+      "id": "T03",
+      "unavailable": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          5
+        ]
+      ],
+      "preferences": []
+    },
+    {
+      "id": "T04",
+      "unavailable": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          5
+        ]
+      ],
+      "preferences": []
+    },
+    {
+      "id": "T05",
+      "unavailable": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          4
+        ]
+      ],
+      "preferences": []
+    },
+    {
+      "id": "T06",
+      "unavailable": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          4
+        ]
+      ],
+      "preferences": []
+    },
+    {
+      "id": "T07",
+      "unavailable": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          4
+        ]
+      ],
+      "preferences": []
+    },
+    {
+      "id": "T08",
+      "unavailable": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          4
+        ]
+      ],
+      "preferences": []
+    },
+    {
+      "id": "T09",
+      "unavailable": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "preferences": []
+    },
+    {
+      "id": "T10",
+      "unavailable": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "preferences": []
+    }
+  ],
+  "policy": {
+    "max_same_subject_per_day": 1,
+    "spread_main_subjects_weight": 3
+  },
+  "lessons": [
+    {
+      "id": "C01-Chinese-1",
+      "class_ids": [
+        "C01"
+      ],
+      "subject": "Chinese",
+      "teacher_ids": [
+        "T01"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C01-English-1",
+      "class_ids": [
+        "C01"
+      ],
+      "subject": "English",
+      "teacher_ids": [
+        "T07"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C01-Math-1",
+      "class_ids": [
+        "C01"
+      ],
+      "subject": "Math",
+      "teacher_ids": [
+        "T03"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C01-Science-1",
+      "class_ids": [
+        "C01"
+      ],
+      "subject": "Science",
+      "teacher_ids": [
+        "T09"
+      ],
+      "room_kind": "lab",
+      "is_main_subject": false
+    },
+    {
+      "id": "C01-Social-1",
+      "class_ids": [
+        "C01"
+      ],
+      "subject": "Social",
+      "teacher_ids": [
+        "T05"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C01-PE-1",
+      "class_ids": [
+        "C01"
+      ],
+      "subject": "PE",
+      "teacher_ids": [
+        "T01"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C01-Arts-1",
+      "class_ids": [
+        "C01"
+      ],
+      "subject": "Arts",
+      "teacher_ids": [
+        "T07"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C01-Chinese-2",
+      "class_ids": [
+        "C01"
+      ],
+      "subject": "Chinese",
+      "teacher_ids": [
+        "T03"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C01-English-2",
+      "class_ids": [
+        "C01"
+      ],
+      "subject": "English",
+      "teacher_ids": [
+        "T09"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C01-Math-2",
+      "class_ids": [
+        "C01"
+      ],
+      "subject": "Math",
+      "teacher_ids": [
+        "T05"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C01-Science-2",
+      "class_ids": [
+        "C01"
+      ],
+      "subject": "Science",
+      "teacher_ids": [
+        "T01"
+      ],
+      "room_kind": "lab",
+      "is_main_subject": false
+    },
+    {
+      "id": "C01-Social-2",
+      "class_ids": [
+        "C01"
+      ],
+      "subject": "Social",
+      "teacher_ids": [
+        "T07"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C01-PE-2",
+      "class_ids": [
+        "C01"
+      ],
+      "subject": "PE",
+      "teacher_ids": [
+        "T03"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C01-Arts-2",
+      "class_ids": [
+        "C01"
+      ],
+      "subject": "Arts",
+      "teacher_ids": [
+        "T09"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C01-Chinese-3",
+      "class_ids": [
+        "C01"
+      ],
+      "subject": "Chinese",
+      "teacher_ids": [
+        "T05"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C01-English-3",
+      "class_ids": [
+        "C01"
+      ],
+      "subject": "English",
+      "teacher_ids": [
+        "T01"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C01-Math-3",
+      "class_ids": [
+        "C01"
+      ],
+      "subject": "Math",
+      "teacher_ids": [
+        "T07"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C01-Science-3",
+      "class_ids": [
+        "C01"
+      ],
+      "subject": "Science",
+      "teacher_ids": [
+        "T03"
+      ],
+      "room_kind": "lab",
+      "is_main_subject": false
+    },
+    {
+      "id": "C01-Social-3",
+      "class_ids": [
+        "C01"
+      ],
+      "subject": "Social",
+      "teacher_ids": [
+        "T09"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C01-PE-3",
+      "class_ids": [
+        "C01"
+      ],
+      "subject": "PE",
+      "teacher_ids": [
+        "T05"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C01-Arts-3",
+      "class_ids": [
+        "C01"
+      ],
+      "subject": "Arts",
+      "teacher_ids": [
+        "T01"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C01-Chinese-4",
+      "class_ids": [
+        "C01"
+      ],
+      "subject": "Chinese",
+      "teacher_ids": [
+        "T07"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C01-English-4",
+      "class_ids": [
+        "C01"
+      ],
+      "subject": "English",
+      "teacher_ids": [
+        "T03"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C01-Math-4",
+      "class_ids": [
+        "C01"
+      ],
+      "subject": "Math",
+      "teacher_ids": [
+        "T09"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C01-Science-4",
+      "class_ids": [
+        "C01"
+      ],
+      "subject": "Science",
+      "teacher_ids": [
+        "T05"
+      ],
+      "room_kind": "lab",
+      "is_main_subject": false
+    },
+    {
+      "id": "C01-Social-4",
+      "class_ids": [
+        "C01"
+      ],
+      "subject": "Social",
+      "teacher_ids": [
+        "T01"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C01-PE-4",
+      "class_ids": [
+        "C01"
+      ],
+      "subject": "PE",
+      "teacher_ids": [
+        "T07"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C01-Arts-4",
+      "class_ids": [
+        "C01"
+      ],
+      "subject": "Arts",
+      "teacher_ids": [
+        "T03"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C01-Chinese-5",
+      "class_ids": [
+        "C01"
+      ],
+      "subject": "Chinese",
+      "teacher_ids": [
+        "T09"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C01-English-5",
+      "class_ids": [
+        "C01"
+      ],
+      "subject": "English",
+      "teacher_ids": [
+        "T05"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C01-Math-5",
+      "class_ids": [
+        "C01"
+      ],
+      "subject": "Math",
+      "teacher_ids": [
+        "T01"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C01-Science-5",
+      "class_ids": [
+        "C01"
+      ],
+      "subject": "Science",
+      "teacher_ids": [
+        "T07"
+      ],
+      "room_kind": "lab",
+      "is_main_subject": false
+    },
+    {
+      "id": "C01-Social-5",
+      "class_ids": [
+        "C01"
+      ],
+      "subject": "Social",
+      "teacher_ids": [
+        "T03"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C01-PE-5",
+      "class_ids": [
+        "C01"
+      ],
+      "subject": "PE",
+      "teacher_ids": [
+        "T09"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C01-Arts-5",
+      "class_ids": [
+        "C01"
+      ],
+      "subject": "Arts",
+      "teacher_ids": [
+        "T05"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C02-English-1",
+      "class_ids": [
+        "C02"
+      ],
+      "subject": "English",
+      "teacher_ids": [
+        "T02"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C02-Math-1",
+      "class_ids": [
+        "C02"
+      ],
+      "subject": "Math",
+      "teacher_ids": [
+        "T08"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C02-Science-1",
+      "class_ids": [
+        "C02"
+      ],
+      "subject": "Science",
+      "teacher_ids": [
+        "T04"
+      ],
+      "room_kind": "lab",
+      "is_main_subject": false
+    },
+    {
+      "id": "C02-Social-1",
+      "class_ids": [
+        "C02"
+      ],
+      "subject": "Social",
+      "teacher_ids": [
+        "T10"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C02-PE-1",
+      "class_ids": [
+        "C02"
+      ],
+      "subject": "PE",
+      "teacher_ids": [
+        "T06"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C02-Arts-1",
+      "class_ids": [
+        "C02"
+      ],
+      "subject": "Arts",
+      "teacher_ids": [
+        "T02"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C02-Chinese-1",
+      "class_ids": [
+        "C02"
+      ],
+      "subject": "Chinese",
+      "teacher_ids": [
+        "T08"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C02-English-2",
+      "class_ids": [
+        "C02"
+      ],
+      "subject": "English",
+      "teacher_ids": [
+        "T04"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C02-Math-2",
+      "class_ids": [
+        "C02"
+      ],
+      "subject": "Math",
+      "teacher_ids": [
+        "T10"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C02-Science-2",
+      "class_ids": [
+        "C02"
+      ],
+      "subject": "Science",
+      "teacher_ids": [
+        "T06"
+      ],
+      "room_kind": "lab",
+      "is_main_subject": false
+    },
+    {
+      "id": "C02-Social-2",
+      "class_ids": [
+        "C02"
+      ],
+      "subject": "Social",
+      "teacher_ids": [
+        "T02"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C02-PE-2",
+      "class_ids": [
+        "C02"
+      ],
+      "subject": "PE",
+      "teacher_ids": [
+        "T08"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C02-Arts-2",
+      "class_ids": [
+        "C02"
+      ],
+      "subject": "Arts",
+      "teacher_ids": [
+        "T04"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C02-Chinese-2",
+      "class_ids": [
+        "C02"
+      ],
+      "subject": "Chinese",
+      "teacher_ids": [
+        "T10"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C02-English-3",
+      "class_ids": [
+        "C02"
+      ],
+      "subject": "English",
+      "teacher_ids": [
+        "T06"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C02-Math-3",
+      "class_ids": [
+        "C02"
+      ],
+      "subject": "Math",
+      "teacher_ids": [
+        "T02"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C02-Science-3",
+      "class_ids": [
+        "C02"
+      ],
+      "subject": "Science",
+      "teacher_ids": [
+        "T08"
+      ],
+      "room_kind": "lab",
+      "is_main_subject": false
+    },
+    {
+      "id": "C02-Social-3",
+      "class_ids": [
+        "C02"
+      ],
+      "subject": "Social",
+      "teacher_ids": [
+        "T04"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C02-PE-3",
+      "class_ids": [
+        "C02"
+      ],
+      "subject": "PE",
+      "teacher_ids": [
+        "T10"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C02-Arts-3",
+      "class_ids": [
+        "C02"
+      ],
+      "subject": "Arts",
+      "teacher_ids": [
+        "T06"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C02-Chinese-3",
+      "class_ids": [
+        "C02"
+      ],
+      "subject": "Chinese",
+      "teacher_ids": [
+        "T02"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C02-English-4",
+      "class_ids": [
+        "C02"
+      ],
+      "subject": "English",
+      "teacher_ids": [
+        "T08"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C02-Math-4",
+      "class_ids": [
+        "C02"
+      ],
+      "subject": "Math",
+      "teacher_ids": [
+        "T04"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C02-Science-4",
+      "class_ids": [
+        "C02"
+      ],
+      "subject": "Science",
+      "teacher_ids": [
+        "T10"
+      ],
+      "room_kind": "lab",
+      "is_main_subject": false
+    },
+    {
+      "id": "C02-Social-4",
+      "class_ids": [
+        "C02"
+      ],
+      "subject": "Social",
+      "teacher_ids": [
+        "T06"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C02-PE-4",
+      "class_ids": [
+        "C02"
+      ],
+      "subject": "PE",
+      "teacher_ids": [
+        "T02"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C02-Arts-4",
+      "class_ids": [
+        "C02"
+      ],
+      "subject": "Arts",
+      "teacher_ids": [
+        "T08"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C02-Chinese-4",
+      "class_ids": [
+        "C02"
+      ],
+      "subject": "Chinese",
+      "teacher_ids": [
+        "T04"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C02-English-5",
+      "class_ids": [
+        "C02"
+      ],
+      "subject": "English",
+      "teacher_ids": [
+        "T10"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C02-Math-5",
+      "class_ids": [
+        "C02"
+      ],
+      "subject": "Math",
+      "teacher_ids": [
+        "T06"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C02-Science-5",
+      "class_ids": [
+        "C02"
+      ],
+      "subject": "Science",
+      "teacher_ids": [
+        "T02"
+      ],
+      "room_kind": "lab",
+      "is_main_subject": false
+    },
+    {
+      "id": "C02-Social-5",
+      "class_ids": [
+        "C02"
+      ],
+      "subject": "Social",
+      "teacher_ids": [
+        "T08"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C02-PE-5",
+      "class_ids": [
+        "C02"
+      ],
+      "subject": "PE",
+      "teacher_ids": [
+        "T04"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C02-Arts-5",
+      "class_ids": [
+        "C02"
+      ],
+      "subject": "Arts",
+      "teacher_ids": [
+        "T10"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C02-Chinese-5",
+      "class_ids": [
+        "C02"
+      ],
+      "subject": "Chinese",
+      "teacher_ids": [
+        "T06"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C03-Math-1",
+      "class_ids": [
+        "C03"
+      ],
+      "subject": "Math",
+      "teacher_ids": [
+        "T03"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C03-Science-1",
+      "class_ids": [
+        "C03"
+      ],
+      "subject": "Science",
+      "teacher_ids": [
+        "T09"
+      ],
+      "room_kind": "lab",
+      "is_main_subject": false
+    },
+    {
+      "id": "C03-Social-1",
+      "class_ids": [
+        "C03"
+      ],
+      "subject": "Social",
+      "teacher_ids": [
+        "T05"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C03-PE-1",
+      "class_ids": [
+        "C03"
+      ],
+      "subject": "PE",
+      "teacher_ids": [
+        "T01"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C03-Arts-1",
+      "class_ids": [
+        "C03"
+      ],
+      "subject": "Arts",
+      "teacher_ids": [
+        "T07"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C03-Chinese-1",
+      "class_ids": [
+        "C03"
+      ],
+      "subject": "Chinese",
+      "teacher_ids": [
+        "T03"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C03-English-1",
+      "class_ids": [
+        "C03"
+      ],
+      "subject": "English",
+      "teacher_ids": [
+        "T09"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C03-Math-2",
+      "class_ids": [
+        "C03"
+      ],
+      "subject": "Math",
+      "teacher_ids": [
+        "T05"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C03-Science-2",
+      "class_ids": [
+        "C03"
+      ],
+      "subject": "Science",
+      "teacher_ids": [
+        "T01"
+      ],
+      "room_kind": "lab",
+      "is_main_subject": false
+    },
+    {
+      "id": "C03-Social-2",
+      "class_ids": [
+        "C03"
+      ],
+      "subject": "Social",
+      "teacher_ids": [
+        "T07"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C03-PE-2",
+      "class_ids": [
+        "C03"
+      ],
+      "subject": "PE",
+      "teacher_ids": [
+        "T03"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C03-Arts-2",
+      "class_ids": [
+        "C03"
+      ],
+      "subject": "Arts",
+      "teacher_ids": [
+        "T09"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C03-Chinese-2",
+      "class_ids": [
+        "C03"
+      ],
+      "subject": "Chinese",
+      "teacher_ids": [
+        "T05"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C03-English-2",
+      "class_ids": [
+        "C03"
+      ],
+      "subject": "English",
+      "teacher_ids": [
+        "T01"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C03-Math-3",
+      "class_ids": [
+        "C03"
+      ],
+      "subject": "Math",
+      "teacher_ids": [
+        "T07"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C03-Science-3",
+      "class_ids": [
+        "C03"
+      ],
+      "subject": "Science",
+      "teacher_ids": [
+        "T03"
+      ],
+      "room_kind": "lab",
+      "is_main_subject": false
+    },
+    {
+      "id": "C03-Social-3",
+      "class_ids": [
+        "C03"
+      ],
+      "subject": "Social",
+      "teacher_ids": [
+        "T09"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C03-PE-3",
+      "class_ids": [
+        "C03"
+      ],
+      "subject": "PE",
+      "teacher_ids": [
+        "T05"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C03-Arts-3",
+      "class_ids": [
+        "C03"
+      ],
+      "subject": "Arts",
+      "teacher_ids": [
+        "T01"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C03-Chinese-3",
+      "class_ids": [
+        "C03"
+      ],
+      "subject": "Chinese",
+      "teacher_ids": [
+        "T07"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C03-English-3",
+      "class_ids": [
+        "C03"
+      ],
+      "subject": "English",
+      "teacher_ids": [
+        "T03"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C03-Math-4",
+      "class_ids": [
+        "C03"
+      ],
+      "subject": "Math",
+      "teacher_ids": [
+        "T09"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C03-Science-4",
+      "class_ids": [
+        "C03"
+      ],
+      "subject": "Science",
+      "teacher_ids": [
+        "T05"
+      ],
+      "room_kind": "lab",
+      "is_main_subject": false
+    },
+    {
+      "id": "C03-Social-4",
+      "class_ids": [
+        "C03"
+      ],
+      "subject": "Social",
+      "teacher_ids": [
+        "T01"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C03-PE-4",
+      "class_ids": [
+        "C03"
+      ],
+      "subject": "PE",
+      "teacher_ids": [
+        "T07"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C03-Arts-4",
+      "class_ids": [
+        "C03"
+      ],
+      "subject": "Arts",
+      "teacher_ids": [
+        "T03"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C03-Chinese-4",
+      "class_ids": [
+        "C03"
+      ],
+      "subject": "Chinese",
+      "teacher_ids": [
+        "T09"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C03-English-4",
+      "class_ids": [
+        "C03"
+      ],
+      "subject": "English",
+      "teacher_ids": [
+        "T05"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C03-Math-5",
+      "class_ids": [
+        "C03"
+      ],
+      "subject": "Math",
+      "teacher_ids": [
+        "T01"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C03-Science-5",
+      "class_ids": [
+        "C03"
+      ],
+      "subject": "Science",
+      "teacher_ids": [
+        "T07"
+      ],
+      "room_kind": "lab",
+      "is_main_subject": false
+    },
+    {
+      "id": "C03-Social-5",
+      "class_ids": [
+        "C03"
+      ],
+      "subject": "Social",
+      "teacher_ids": [
+        "T03"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C03-PE-5",
+      "class_ids": [
+        "C03"
+      ],
+      "subject": "PE",
+      "teacher_ids": [
+        "T09"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C03-Arts-5",
+      "class_ids": [
+        "C03"
+      ],
+      "subject": "Arts",
+      "teacher_ids": [
+        "T05"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C03-Chinese-5",
+      "class_ids": [
+        "C03"
+      ],
+      "subject": "Chinese",
+      "teacher_ids": [
+        "T01"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C03-English-5",
+      "class_ids": [
+        "C03"
+      ],
+      "subject": "English",
+      "teacher_ids": [
+        "T07"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C04-Science-1",
+      "class_ids": [
+        "C04"
+      ],
+      "subject": "Science",
+      "teacher_ids": [
+        "T04"
+      ],
+      "room_kind": "lab",
+      "is_main_subject": false
+    },
+    {
+      "id": "C04-Social-1",
+      "class_ids": [
+        "C04"
+      ],
+      "subject": "Social",
+      "teacher_ids": [
+        "T10"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C04-PE-1",
+      "class_ids": [
+        "C04"
+      ],
+      "subject": "PE",
+      "teacher_ids": [
+        "T06"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C04-Arts-1",
+      "class_ids": [
+        "C04"
+      ],
+      "subject": "Arts",
+      "teacher_ids": [
+        "T02"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C04-Chinese-1",
+      "class_ids": [
+        "C04"
+      ],
+      "subject": "Chinese",
+      "teacher_ids": [
+        "T08"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C04-English-1",
+      "class_ids": [
+        "C04"
+      ],
+      "subject": "English",
+      "teacher_ids": [
+        "T04"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C04-Math-1",
+      "class_ids": [
+        "C04"
+      ],
+      "subject": "Math",
+      "teacher_ids": [
+        "T10"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C04-Science-2",
+      "class_ids": [
+        "C04"
+      ],
+      "subject": "Science",
+      "teacher_ids": [
+        "T06"
+      ],
+      "room_kind": "lab",
+      "is_main_subject": false
+    },
+    {
+      "id": "C04-Social-2",
+      "class_ids": [
+        "C04"
+      ],
+      "subject": "Social",
+      "teacher_ids": [
+        "T02"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C04-PE-2",
+      "class_ids": [
+        "C04"
+      ],
+      "subject": "PE",
+      "teacher_ids": [
+        "T08"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C04-Arts-2",
+      "class_ids": [
+        "C04"
+      ],
+      "subject": "Arts",
+      "teacher_ids": [
+        "T04"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C04-Chinese-2",
+      "class_ids": [
+        "C04"
+      ],
+      "subject": "Chinese",
+      "teacher_ids": [
+        "T10"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C04-English-2",
+      "class_ids": [
+        "C04"
+      ],
+      "subject": "English",
+      "teacher_ids": [
+        "T06"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C04-Math-2",
+      "class_ids": [
+        "C04"
+      ],
+      "subject": "Math",
+      "teacher_ids": [
+        "T02"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C04-Science-3",
+      "class_ids": [
+        "C04"
+      ],
+      "subject": "Science",
+      "teacher_ids": [
+        "T08"
+      ],
+      "room_kind": "lab",
+      "is_main_subject": false
+    },
+    {
+      "id": "C04-Social-3",
+      "class_ids": [
+        "C04"
+      ],
+      "subject": "Social",
+      "teacher_ids": [
+        "T04"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C04-PE-3",
+      "class_ids": [
+        "C04"
+      ],
+      "subject": "PE",
+      "teacher_ids": [
+        "T10"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C04-Arts-3",
+      "class_ids": [
+        "C04"
+      ],
+      "subject": "Arts",
+      "teacher_ids": [
+        "T06"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C04-Chinese-3",
+      "class_ids": [
+        "C04"
+      ],
+      "subject": "Chinese",
+      "teacher_ids": [
+        "T02"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C04-English-3",
+      "class_ids": [
+        "C04"
+      ],
+      "subject": "English",
+      "teacher_ids": [
+        "T08"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C04-Math-3",
+      "class_ids": [
+        "C04"
+      ],
+      "subject": "Math",
+      "teacher_ids": [
+        "T04"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C04-Science-4",
+      "class_ids": [
+        "C04"
+      ],
+      "subject": "Science",
+      "teacher_ids": [
+        "T10"
+      ],
+      "room_kind": "lab",
+      "is_main_subject": false
+    },
+    {
+      "id": "C04-Social-4",
+      "class_ids": [
+        "C04"
+      ],
+      "subject": "Social",
+      "teacher_ids": [
+        "T06"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C04-PE-4",
+      "class_ids": [
+        "C04"
+      ],
+      "subject": "PE",
+      "teacher_ids": [
+        "T02"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C04-Arts-4",
+      "class_ids": [
+        "C04"
+      ],
+      "subject": "Arts",
+      "teacher_ids": [
+        "T08"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C04-Chinese-4",
+      "class_ids": [
+        "C04"
+      ],
+      "subject": "Chinese",
+      "teacher_ids": [
+        "T04"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C04-English-4",
+      "class_ids": [
+        "C04"
+      ],
+      "subject": "English",
+      "teacher_ids": [
+        "T10"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C04-Math-4",
+      "class_ids": [
+        "C04"
+      ],
+      "subject": "Math",
+      "teacher_ids": [
+        "T06"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C04-Science-5",
+      "class_ids": [
+        "C04"
+      ],
+      "subject": "Science",
+      "teacher_ids": [
+        "T02"
+      ],
+      "room_kind": "lab",
+      "is_main_subject": false
+    },
+    {
+      "id": "C04-Social-5",
+      "class_ids": [
+        "C04"
+      ],
+      "subject": "Social",
+      "teacher_ids": [
+        "T08"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C04-PE-5",
+      "class_ids": [
+        "C04"
+      ],
+      "subject": "PE",
+      "teacher_ids": [
+        "T04"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C04-Arts-5",
+      "class_ids": [
+        "C04"
+      ],
+      "subject": "Arts",
+      "teacher_ids": [
+        "T10"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C04-Chinese-5",
+      "class_ids": [
+        "C04"
+      ],
+      "subject": "Chinese",
+      "teacher_ids": [
+        "T06"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C04-English-5",
+      "class_ids": [
+        "C04"
+      ],
+      "subject": "English",
+      "teacher_ids": [
+        "T02"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C04-Math-5",
+      "class_ids": [
+        "C04"
+      ],
+      "subject": "Math",
+      "teacher_ids": [
+        "T08"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C05-Social-1",
+      "class_ids": [
+        "C05"
+      ],
+      "subject": "Social",
+      "teacher_ids": [
+        "T05"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C05-PE-1",
+      "class_ids": [
+        "C05"
+      ],
+      "subject": "PE",
+      "teacher_ids": [
+        "T01"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C05-Arts-1",
+      "class_ids": [
+        "C05"
+      ],
+      "subject": "Arts",
+      "teacher_ids": [
+        "T07"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C05-Chinese-1",
+      "class_ids": [
+        "C05"
+      ],
+      "subject": "Chinese",
+      "teacher_ids": [
+        "T03"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C05-English-1",
+      "class_ids": [
+        "C05"
+      ],
+      "subject": "English",
+      "teacher_ids": [
+        "T09"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C05-Math-1",
+      "class_ids": [
+        "C05"
+      ],
+      "subject": "Math",
+      "teacher_ids": [
+        "T05"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C05-Science-1",
+      "class_ids": [
+        "C05"
+      ],
+      "subject": "Science",
+      "teacher_ids": [
+        "T01"
+      ],
+      "room_kind": "lab",
+      "is_main_subject": false
+    },
+    {
+      "id": "C05-Social-2",
+      "class_ids": [
+        "C05"
+      ],
+      "subject": "Social",
+      "teacher_ids": [
+        "T07"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C05-PE-2",
+      "class_ids": [
+        "C05"
+      ],
+      "subject": "PE",
+      "teacher_ids": [
+        "T03"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C05-Arts-2",
+      "class_ids": [
+        "C05"
+      ],
+      "subject": "Arts",
+      "teacher_ids": [
+        "T09"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C05-Chinese-2",
+      "class_ids": [
+        "C05"
+      ],
+      "subject": "Chinese",
+      "teacher_ids": [
+        "T05"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C05-English-2",
+      "class_ids": [
+        "C05"
+      ],
+      "subject": "English",
+      "teacher_ids": [
+        "T01"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C05-Math-2",
+      "class_ids": [
+        "C05"
+      ],
+      "subject": "Math",
+      "teacher_ids": [
+        "T07"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C05-Science-2",
+      "class_ids": [
+        "C05"
+      ],
+      "subject": "Science",
+      "teacher_ids": [
+        "T03"
+      ],
+      "room_kind": "lab",
+      "is_main_subject": false
+    },
+    {
+      "id": "C05-Social-3",
+      "class_ids": [
+        "C05"
+      ],
+      "subject": "Social",
+      "teacher_ids": [
+        "T09"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C05-PE-3",
+      "class_ids": [
+        "C05"
+      ],
+      "subject": "PE",
+      "teacher_ids": [
+        "T05"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C05-Arts-3",
+      "class_ids": [
+        "C05"
+      ],
+      "subject": "Arts",
+      "teacher_ids": [
+        "T01"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C05-Chinese-3",
+      "class_ids": [
+        "C05"
+      ],
+      "subject": "Chinese",
+      "teacher_ids": [
+        "T07"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C05-English-3",
+      "class_ids": [
+        "C05"
+      ],
+      "subject": "English",
+      "teacher_ids": [
+        "T03"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C05-Math-3",
+      "class_ids": [
+        "C05"
+      ],
+      "subject": "Math",
+      "teacher_ids": [
+        "T09"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C05-Science-3",
+      "class_ids": [
+        "C05"
+      ],
+      "subject": "Science",
+      "teacher_ids": [
+        "T05"
+      ],
+      "room_kind": "lab",
+      "is_main_subject": false
+    },
+    {
+      "id": "C05-Social-4",
+      "class_ids": [
+        "C05"
+      ],
+      "subject": "Social",
+      "teacher_ids": [
+        "T01"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C05-PE-4",
+      "class_ids": [
+        "C05"
+      ],
+      "subject": "PE",
+      "teacher_ids": [
+        "T07"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C05-Arts-4",
+      "class_ids": [
+        "C05"
+      ],
+      "subject": "Arts",
+      "teacher_ids": [
+        "T03"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C05-Chinese-4",
+      "class_ids": [
+        "C05"
+      ],
+      "subject": "Chinese",
+      "teacher_ids": [
+        "T09"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C05-English-4",
+      "class_ids": [
+        "C05"
+      ],
+      "subject": "English",
+      "teacher_ids": [
+        "T05"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C05-Math-4",
+      "class_ids": [
+        "C05"
+      ],
+      "subject": "Math",
+      "teacher_ids": [
+        "T01"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C05-Science-4",
+      "class_ids": [
+        "C05"
+      ],
+      "subject": "Science",
+      "teacher_ids": [
+        "T07"
+      ],
+      "room_kind": "lab",
+      "is_main_subject": false
+    },
+    {
+      "id": "C05-Social-5",
+      "class_ids": [
+        "C05"
+      ],
+      "subject": "Social",
+      "teacher_ids": [
+        "T03"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C05-PE-5",
+      "class_ids": [
+        "C05"
+      ],
+      "subject": "PE",
+      "teacher_ids": [
+        "T09"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C05-Arts-5",
+      "class_ids": [
+        "C05"
+      ],
+      "subject": "Arts",
+      "teacher_ids": [
+        "T05"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C05-Chinese-5",
+      "class_ids": [
+        "C05"
+      ],
+      "subject": "Chinese",
+      "teacher_ids": [
+        "T01"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C05-English-5",
+      "class_ids": [
+        "C05"
+      ],
+      "subject": "English",
+      "teacher_ids": [
+        "T07"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C05-Math-5",
+      "class_ids": [
+        "C05"
+      ],
+      "subject": "Math",
+      "teacher_ids": [
+        "T03"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C05-Science-5",
+      "class_ids": [
+        "C05"
+      ],
+      "subject": "Science",
+      "teacher_ids": [
+        "T09"
+      ],
+      "room_kind": "lab",
+      "is_main_subject": false
+    },
+    {
+      "id": "C06-PE-1",
+      "class_ids": [
+        "C06"
+      ],
+      "subject": "PE",
+      "teacher_ids": [
+        "T06"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C06-Arts-1",
+      "class_ids": [
+        "C06"
+      ],
+      "subject": "Arts",
+      "teacher_ids": [
+        "T02"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C06-Chinese-1",
+      "class_ids": [
+        "C06"
+      ],
+      "subject": "Chinese",
+      "teacher_ids": [
+        "T08"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C06-English-1",
+      "class_ids": [
+        "C06"
+      ],
+      "subject": "English",
+      "teacher_ids": [
+        "T04"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C06-Math-1",
+      "class_ids": [
+        "C06"
+      ],
+      "subject": "Math",
+      "teacher_ids": [
+        "T10"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C06-Science-1",
+      "class_ids": [
+        "C06"
+      ],
+      "subject": "Science",
+      "teacher_ids": [
+        "T06"
+      ],
+      "room_kind": "lab",
+      "is_main_subject": false
+    },
+    {
+      "id": "C06-Social-1",
+      "class_ids": [
+        "C06"
+      ],
+      "subject": "Social",
+      "teacher_ids": [
+        "T02"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C06-PE-2",
+      "class_ids": [
+        "C06"
+      ],
+      "subject": "PE",
+      "teacher_ids": [
+        "T08"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C06-Arts-2",
+      "class_ids": [
+        "C06"
+      ],
+      "subject": "Arts",
+      "teacher_ids": [
+        "T04"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C06-Chinese-2",
+      "class_ids": [
+        "C06"
+      ],
+      "subject": "Chinese",
+      "teacher_ids": [
+        "T10"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C06-English-2",
+      "class_ids": [
+        "C06"
+      ],
+      "subject": "English",
+      "teacher_ids": [
+        "T06"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C06-Math-2",
+      "class_ids": [
+        "C06"
+      ],
+      "subject": "Math",
+      "teacher_ids": [
+        "T02"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C06-Science-2",
+      "class_ids": [
+        "C06"
+      ],
+      "subject": "Science",
+      "teacher_ids": [
+        "T08"
+      ],
+      "room_kind": "lab",
+      "is_main_subject": false
+    },
+    {
+      "id": "C06-Social-2",
+      "class_ids": [
+        "C06"
+      ],
+      "subject": "Social",
+      "teacher_ids": [
+        "T04"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C06-PE-3",
+      "class_ids": [
+        "C06"
+      ],
+      "subject": "PE",
+      "teacher_ids": [
+        "T10"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C06-Arts-3",
+      "class_ids": [
+        "C06"
+      ],
+      "subject": "Arts",
+      "teacher_ids": [
+        "T06"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C06-Chinese-3",
+      "class_ids": [
+        "C06"
+      ],
+      "subject": "Chinese",
+      "teacher_ids": [
+        "T02"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C06-English-3",
+      "class_ids": [
+        "C06"
+      ],
+      "subject": "English",
+      "teacher_ids": [
+        "T08"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C06-Math-3",
+      "class_ids": [
+        "C06"
+      ],
+      "subject": "Math",
+      "teacher_ids": [
+        "T04"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C06-Science-3",
+      "class_ids": [
+        "C06"
+      ],
+      "subject": "Science",
+      "teacher_ids": [
+        "T10"
+      ],
+      "room_kind": "lab",
+      "is_main_subject": false
+    },
+    {
+      "id": "C06-Social-3",
+      "class_ids": [
+        "C06"
+      ],
+      "subject": "Social",
+      "teacher_ids": [
+        "T06"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C06-PE-4",
+      "class_ids": [
+        "C06"
+      ],
+      "subject": "PE",
+      "teacher_ids": [
+        "T02"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C06-Arts-4",
+      "class_ids": [
+        "C06"
+      ],
+      "subject": "Arts",
+      "teacher_ids": [
+        "T08"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C06-Chinese-4",
+      "class_ids": [
+        "C06"
+      ],
+      "subject": "Chinese",
+      "teacher_ids": [
+        "T04"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C06-English-4",
+      "class_ids": [
+        "C06"
+      ],
+      "subject": "English",
+      "teacher_ids": [
+        "T10"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C06-Math-4",
+      "class_ids": [
+        "C06"
+      ],
+      "subject": "Math",
+      "teacher_ids": [
+        "T06"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C06-Science-4",
+      "class_ids": [
+        "C06"
+      ],
+      "subject": "Science",
+      "teacher_ids": [
+        "T02"
+      ],
+      "room_kind": "lab",
+      "is_main_subject": false
+    },
+    {
+      "id": "C06-Social-4",
+      "class_ids": [
+        "C06"
+      ],
+      "subject": "Social",
+      "teacher_ids": [
+        "T08"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C06-PE-5",
+      "class_ids": [
+        "C06"
+      ],
+      "subject": "PE",
+      "teacher_ids": [
+        "T04"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C06-Arts-5",
+      "class_ids": [
+        "C06"
+      ],
+      "subject": "Arts",
+      "teacher_ids": [
+        "T10"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    },
+    {
+      "id": "C06-Chinese-5",
+      "class_ids": [
+        "C06"
+      ],
+      "subject": "Chinese",
+      "teacher_ids": [
+        "T06"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C06-English-5",
+      "class_ids": [
+        "C06"
+      ],
+      "subject": "English",
+      "teacher_ids": [
+        "T02"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C06-Math-5",
+      "class_ids": [
+        "C06"
+      ],
+      "subject": "Math",
+      "teacher_ids": [
+        "T08"
+      ],
+      "room_kind": "general",
+      "is_main_subject": true
+    },
+    {
+      "id": "C06-Science-5",
+      "class_ids": [
+        "C06"
+      ],
+      "subject": "Science",
+      "teacher_ids": [
+        "T04"
+      ],
+      "room_kind": "lab",
+      "is_main_subject": false
+    },
+    {
+      "id": "C06-Social-5",
+      "class_ids": [
+        "C06"
+      ],
+      "subject": "Social",
+      "teacher_ids": [
+        "T10"
+      ],
+      "room_kind": "general",
+      "is_main_subject": false
+    }
+  ]
+}

@@ -3,8 +3,12 @@
   "periods_per_day": 5,
   "classes": ["C1", "C2", "C3", "C4", "C5", "C6"],
   "rooms": [
-    {"id": "R-A", "kind": "general"},
-    {"id": "R-B", "kind": "general"},
+    {"id": "C1-HOME", "kind": "general", "assigned_class_id": "C1"},
+    {"id": "C2-HOME", "kind": "general", "assigned_class_id": "C2"},
+    {"id": "C3-HOME", "kind": "general", "assigned_class_id": "C3"},
+    {"id": "C4-HOME", "kind": "general", "assigned_class_id": "C4"},
+    {"id": "C5-HOME", "kind": "general", "assigned_class_id": "C5"},
+    {"id": "C6-HOME", "kind": "general", "assigned_class_id": "C6"},
     {"id": "LAB", "kind": "lab"}
   ],
   "teachers": [
@@ -47,4 +51,3 @@
     {"id": "L24", "class_id": "C6", "subject": "Science", "teacher_id": "T10", "room_kind": "lab"}
   ]
 }
-

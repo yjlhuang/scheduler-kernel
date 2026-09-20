@@ -9,10 +9,31 @@ from .explain import explain_infeasibility
 from .io import load_problem, state_to_dict
 from .repair import repair_teacher_slot
 from .solver import solve
+from .solver.validator import validate_schedule
 
 
 def _print(value: dict) -> None:
     print(json.dumps(value, ensure_ascii=False, indent=2))
+
+
+def generate_payload(problem) -> dict:
+    result = solve(problem)
+    if result.state is None:
+        return {"status": result.status, "objective": result.objective, "schedule": None}
+    violations = validate_schedule(problem, result.state)
+    if violations:
+        return {
+            "status": "invalid",
+            "objective": result.objective,
+            "schedule": None,
+            "validation_errors": violations,
+        }
+    return {
+        "status": result.status,
+        "objective": result.objective,
+        "schedule": state_to_dict(result.state),
+        "validation_errors": (),
+    }
 
 
 def main() -> None:
@@ -25,14 +46,7 @@ def main() -> None:
     problem = load_problem(args.fixture)
 
     if args.command == "generate":
-        result = solve(problem)
-        _print(
-            {
-                "status": result.status,
-                "objective": result.objective,
-                "schedule": state_to_dict(result.state) if result.state else None,
-            }
-        )
+        _print(generate_payload(problem))
     elif args.command == "explain":
         _print(asdict(explain_infeasibility(problem)))
     else:
@@ -45,12 +59,15 @@ def main() -> None:
         repaired = repair_teacher_slot(problem, generated.state, lesson.teacher_id, target.slot)
         _print(
             {
-                "status": repaired.status,
+                "status": repaired.outcome,
+                "solver_status": repaired.solver_status,
                 "teacher": lesson.teacher_id,
                 "avoided_slot": {"day": target.slot.day, "period": target.slot.period},
                 "changed_lessons": repaired.changed_lessons,
                 "locked_lessons": repaired.locked_lessons,
                 "preservation_ratio": repaired.preservation_ratio,
+                "before_quality": asdict(repaired.before_quality),
+                "after_quality": asdict(repaired.after_quality) if repaired.after_quality else None,
                 "schedule": state_to_dict(repaired.state) if repaired.state else None,
             }
         )
@@ -58,4 +75,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-
